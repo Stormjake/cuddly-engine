@@ -4,9 +4,9 @@ require('dotenv').config();
 /**
  * SESSION_ID:
  * - Required: This must match the session saved in MongoDB.
- * - Example: "mekaai_43cdf18f"
+ * - Example: "deathnote_7dce53f4"
  *
- * MEKAMODE:
+ * DEATHNOTEMODE:
  * - Optional but helpful for logic separation.
  * - Use "meka" for private bot mode (one-on-one only).
  * - Use "mekaai" for public/group bot mode (multi-user).
@@ -21,8 +21,8 @@ require('dotenv').config();
  */
 
 module.exports = {
-  SESSION_ID: process.env.SESSION_ID || 'mekaai_43cdf18f',
+  SESSION_ID: process.env.SESSION_ID || 'deathnote_7dce53f4',
   OWNER_JID: process.env.OWNER_JID || '',
-  MEKAMODE: process.env.MEKAMODE || 'meka',
+  MEKAMODE: process.env.MEKAMODE || 'deathnote',
   PORT: process.env.PORT || 3000,
 };
